@@ -22,7 +22,7 @@ export async function POST(request: NextRequest) {
     // Parse PDF
     const parser = new  PDFParse({data:buffer,verbosity:VerbosityLevel.WARNINGS});
     const data = await parser.getText();
-
+    await parser.destroy();
     return NextResponse.json({
       text: data.text,
       numPages: data.total
