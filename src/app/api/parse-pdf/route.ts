@@ -2,6 +2,8 @@ import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 import {PDFParse,VerbosityLevel} from "pdf-parse";
 import "pdf-parse/worker";
+// for commonjs
+// require('pdf-parse/worker');
 
 export async function POST(request: NextRequest) {
   try {
