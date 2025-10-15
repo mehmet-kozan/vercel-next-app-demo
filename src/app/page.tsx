@@ -14,7 +14,7 @@ export default function Home() {
 
     // PDF file validation
     if (file.type !== "application/pdf") {
-      setError("Please select a PDF file!");
+      setError("Please select a PDF file!..");
       return;
     }
 
