@@ -49,7 +49,7 @@ export default function Home() {
     <div className="font-sans min-h-screen p-8">
       <main className="max-w-4xl mx-auto">
         <h1 className="text-3xl font-bold mb-8 text-center">
-          PDF Text Extractor
+          A minimal Next.js + Vercel demo for parsing PDFs with pdf-parse.
         </h1>
 
         <div className="mb-8">
