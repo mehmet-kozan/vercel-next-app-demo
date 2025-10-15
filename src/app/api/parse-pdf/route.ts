@@ -19,10 +19,10 @@ export async function POST(request: NextRequest) {
 
     // Convert PDF file to buffer
     const arrayBuffer = await file.arrayBuffer();
-    const buffer = Buffer.from(arrayBuffer);
+    //const buffer = Buffer.from(arrayBuffer);
 
     // Parse PDF
-    const parser = new  PDFParse({data:buffer,verbosity:VerbosityLevel.WARNINGS});
+    const parser = new  PDFParse({data:arrayBuffer,verbosity:VerbosityLevel.WARNINGS});
     const data = await parser.getText();
     await parser.destroy();
     return NextResponse.json({
