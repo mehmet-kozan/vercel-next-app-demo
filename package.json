@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "next": "15.5.5",
-    "pdf-parse": "latest",
+    "pdf-parse": "^2.4.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
